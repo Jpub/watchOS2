@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Sofia-Regular.otf">
+            <string>Sofia-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CustomFont_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="NHx-1X-Xi4">
+                            <items>
+                                <label alignment="center" text="Hello" id="JQY-ue-k2Z">
+                                    <fontDescription key="font" name="Sofia-Regular" family="Sofia" pointSize="35"/>
+                                </label>
+                                <label alignment="center" text="Label" id="sI2-y3-TUd"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="labelObject" destination="sI2-y3-TUd" id="2uP-i0-HCQ"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

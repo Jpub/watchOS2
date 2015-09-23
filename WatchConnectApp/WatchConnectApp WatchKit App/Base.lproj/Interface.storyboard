@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchConnectApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Label" textAlignment="center" id="HBF-Xf-1Yi"/>
+                        <button width="1" alignment="left" title="Play" id="wbK-Py-NZh">
+                            <connections>
+                                <action selector="startPlay" destination="AgC-eL-Hgc" id="7nE-27-pWs"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stop" id="eXk-cF-1cf">
+                            <connections>
+                                <action selector="stopPlay" destination="AgC-eL-Hgc" id="e1N-Nj-CT5"/>
+                            </connections>
+                        </button>
+                        <slider width="1" alignment="left" value="10" maximum="10" steps="10" id="U7C-1U-EPM">
+                            <connections>
+                                <action selector="volumeChange:" destination="AgC-eL-Hgc" id="3al-nd-imf"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="statusLabel" destination="HBF-Xf-1Yi" id="L9B-wN-3kM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-15" y="137"/>
+        </scene>
+    </scenes>
+</document>

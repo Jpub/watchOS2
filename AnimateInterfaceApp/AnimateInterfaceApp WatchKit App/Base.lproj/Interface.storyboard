@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AnimateInterfaceApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="0.29999999999999999" height="0.29999999999999999" alignment="left" id="H6i-bt-2ID">
+                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Animate" id="6pi-gO-6bx">
+                            <connections>
+                                <action selector="changeLayout" destination="AgC-eL-Hgc" id="Lwf-m9-k3o"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myGroup" destination="H6i-bt-2ID" id="mR9-4c-UOf"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

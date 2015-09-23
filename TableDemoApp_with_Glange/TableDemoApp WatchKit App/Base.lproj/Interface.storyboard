@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TableDemoApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="a8C-uV-ZGC">
+                            <items>
+                                <tableRow identifier="MyRowController" id="JWA-Xy-33Q" customClass="MyRowController" customModule="TableDemoApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="aIT-Yf-3Rj">
+                                        <items>
+                                            <imageView width="25" height="25" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="41y-Ao-GZq"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="TtK-GZ-Vft"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="myImage" destination="41y-Ao-GZq" id="hub-oU-RQ3"/>
+                                        <outlet property="myLabel" destination="TtK-GZ-Vft" id="9Kd-C6-iGx"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="MyTitleRowController" selectable="NO" id="TWY-b1-dKZ" customClass="MyTitleRowController" customModule="TableDemoApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="JJy-I5-9MD">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="Ty0-ej-GUk"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="Ty0-ej-GUk" id="ey6-L9-be1"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myTable" destination="a8C-uV-ZGC" id="6kn-iA-wQr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-278" y="200"/>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="9gS-9k-j5m">
+            <objects>
+                <controller identifier="DetailInterfaceController" hidesWhenLoading="NO" id="Heb-IS-MK0" customClass="DetailInterfaceController" customModule="TableDemoApp_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="5" id="Vof-mO-s0Y"/>
+                    </items>
+                    <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="Vof-mO-s0Y" id="not-C5-Cat"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-278" y="440"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="jLb-ek-aKv">
+            <objects>
+                <glanceController hidesWhenLoading="NO" id="6Am-YG-GdU" customClass="GlanceController" customModule="TableDemoApp_WatchKit_Extension">
+                    <items>
+                        <group alignment="left" id="yIO-gN-wSs">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="Label" id="1Rr-vk-nER"/>
+                            </items>
+                        </group>
+                        <group alignment="left" id="Iie-Ta-BnN">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Label" id="UX1-Q2-G6Z">
+                                    <fontDescription key="font" type="boldSystem" pointSize="35"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="mainLabel" destination="UX1-Q2-G6Z" id="2Ig-wO-Iru"/>
+                        <outlet property="titleLabel" destination="1Rr-vk-nER" id="b2R-Rd-Y1l"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="-5" y="333"/>
+        </scene>
+    </scenes>
+</document>

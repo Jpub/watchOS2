@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatchConnectApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zf-Gj-Jbt">
+                                <rect key="frame" x="285" y="69" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Xy-H9-cYv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqZ-Im-XbN">
+                                <rect key="frame" x="284" y="135" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N3k-a4-4ol"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ABs-Er-Jg9">
+                                <rect key="frame" x="188" y="204" width="225" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="b59-1K-gtw"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="hAu-gx-8H2"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Zf-Gj-Jbt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="44c-hC-V7g"/>
+                            <constraint firstItem="ABs-Er-Jg9" firstAttribute="top" secondItem="qqZ-Im-XbN" secondAttribute="bottom" constant="39" id="7yV-FZ-qOX"/>
+                            <constraint firstItem="qqZ-Im-XbN" firstAttribute="centerX" secondItem="1Zf-Gj-Jbt" secondAttribute="centerX" id="EaF-Fx-XlI"/>
+                            <constraint firstItem="qqZ-Im-XbN" firstAttribute="top" secondItem="1Zf-Gj-Jbt" secondAttribute="bottom" constant="36" id="HfQ-za-cE5"/>
+                            <constraint firstItem="ABs-Er-Jg9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h5B-6h-CU6"/>
+                            <constraint firstItem="qqZ-Im-XbN" firstAttribute="centerX" secondItem="ABs-Er-Jg9" secondAttribute="centerX" id="rzf-aA-DlE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="volumeControl" destination="ABs-Er-Jg9" id="DKe-KP-K1w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="361"/>
+        </scene>
+    </scenes>
+</document>

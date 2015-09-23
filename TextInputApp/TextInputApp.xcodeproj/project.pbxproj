@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88001F901B84C17C00D6F82F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88001F8F1B84C17C00D6F82F /* AppDelegate.swift */; };
+		88001F921B84C17C00D6F82F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88001F911B84C17C00D6F82F /* ViewController.swift */; };
+		88001F951B84C17C00D6F82F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88001F931B84C17C00D6F82F /* Main.storyboard */; };
+		88001F971B84C17C00D6F82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88001F961B84C17C00D6F82F /* Assets.xcassets */; };
+		88001F9A1B84C17C00D6F82F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88001F981B84C17C00D6F82F /* LaunchScreen.storyboard */; };
+		88001F9F1B84C17C00D6F82F /* TextInputApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 88001F9E1B84C17C00D6F82F /* TextInputApp WatchKit App.app */; };
+		88001FA51B84C17C00D6F82F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88001FA31B84C17C00D6F82F /* Interface.storyboard */; };
+		88001FA71B84C17C00D6F82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88001FA61B84C17C00D6F82F /* Assets.xcassets */; };
+		88001FAE1B84C17C00D6F82F /* TextInputApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 88001FAD1B84C17C00D6F82F /* TextInputApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		88001FB31B84C17C00D6F82F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88001FB21B84C17C00D6F82F /* InterfaceController.swift */; };
+		88001FB51B84C17C00D6F82F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88001FB41B84C17C00D6F82F /* ExtensionDelegate.swift */; };
+		88001FB71B84C17C00D6F82F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88001FB61B84C17C00D6F82F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88001FA01B84C17C00D6F82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88001F841B84C17C00D6F82F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88001F9D1B84C17C00D6F82F;
+			remoteInfo = "TextInputApp WatchKit App";
+		};
+		88001FAF1B84C17C00D6F82F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88001F841B84C17C00D6F82F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88001FAC1B84C17C00D6F82F;
+			remoteInfo = "TextInputApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88001FBE1B84C17C00D6F82F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				88001FAE1B84C17C00D6F82F /* TextInputApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88001FC21B84C17C00D6F82F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				88001F9F1B84C17C00D6F82F /* TextInputApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		88001F8C1B84C17C00D6F82F /* TextInputApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextInputApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88001F8F1B84C17C00D6F82F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88001F911B84C17C00D6F82F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88001F941B84C17C00D6F82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88001F961B84C17C00D6F82F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88001F991B84C17C00D6F82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88001F9B1B84C17C00D6F82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88001F9E1B84C17C00D6F82F /* TextInputApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TextInputApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88001FA41B84C17C00D6F82F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		88001FA61B84C17C00D6F82F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88001FA81B84C17C00D6F82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88001FAD1B84C17C00D6F82F /* TextInputApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TextInputApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88001FB21B84C17C00D6F82F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		88001FB41B84C17C00D6F82F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		88001FB61B84C17C00D6F82F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88001FB81B84C17C00D6F82F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88001F891B84C17C00D6F82F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88001FAA1B84C17C00D6F82F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88001F831B84C17C00D6F82F = {
+			isa = PBXGroup;
+			children = (
+				88001F8E1B84C17C00D6F82F /* TextInputApp */,
+				88001FA21B84C17C00D6F82F /* TextInputApp WatchKit App */,
+				88001FB11B84C17C00D6F82F /* TextInputApp WatchKit Extension */,
+				88001F8D1B84C17C00D6F82F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88001F8D1B84C17C00D6F82F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88001F8C1B84C17C00D6F82F /* TextInputApp.app */,
+				88001F9E1B84C17C00D6F82F /* TextInputApp WatchKit App.app */,
+				88001FAD1B84C17C00D6F82F /* TextInputApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88001F8E1B84C17C00D6F82F /* TextInputApp */ = {
+			isa = PBXGroup;
+			children = (
+				88001F8F1B84C17C00D6F82F /* AppDelegate.swift */,
+				88001F911B84C17C00D6F82F /* ViewController.swift */,
+				88001F931B84C17C00D6F82F /* Main.storyboard */,
+				88001F961B84C17C00D6F82F /* Assets.xcassets */,
+				88001F981B84C17C00D6F82F /* LaunchScreen.storyboard */,
+				88001F9B1B84C17C00D6F82F /* Info.plist */,
+			);
+			path = TextInputApp;
+			sourceTree = "<group>";
+		};
+		88001FA21B84C17C00D6F82F /* TextInputApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				88001FA31B84C17C00D6F82F /* Interface.storyboard */,
+				88001FA61B84C17C00D6F82F /* Assets.xcassets */,
+				88001FA81B84C17C00D6F82F /* Info.plist */,
+			);
+			path = "TextInputApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		88001FB11B84C17C00D6F82F /* TextInputApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				88001FB21B84C17C00D6F82F /* InterfaceController.swift */,
+				88001FB41B84C17C00D6F82F /* ExtensionDelegate.swift */,
+				88001FB61B84C17C00D6F82F /* Assets.xcassets */,
+				88001FB81B84C17C00D6F82F /* Info.plist */,
+			);
+			path = "TextInputApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88001F8B1B84C17C00D6F82F /* TextInputApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88001FC31B84C17C00D6F82F /* Build configuration list for PBXNativeTarget "TextInputApp" */;
+			buildPhases = (
+				88001F881B84C17C00D6F82F /* Sources */,
+				88001F891B84C17C00D6F82F /* Frameworks */,
+				88001F8A1B84C17C00D6F82F /* Resources */,
+				88001FC21B84C17C00D6F82F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88001FA11B84C17C00D6F82F /* PBXTargetDependency */,
+			);
+			name = TextInputApp;
+			productName = TextInputApp;
+			productReference = 88001F8C1B84C17C00D6F82F /* TextInputApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88001F9D1B84C17C00D6F82F /* TextInputApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88001FBF1B84C17C00D6F82F /* Build configuration list for PBXNativeTarget "TextInputApp WatchKit App" */;
+			buildPhases = (
+				88001F9C1B84C17C00D6F82F /* Resources */,
+				88001FBE1B84C17C00D6F82F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88001FB01B84C17C00D6F82F /* PBXTargetDependency */,
+			);
+			name = "TextInputApp WatchKit App";
+			productName = "TextInputApp WatchKit App";
+			productReference = 88001F9E1B84C17C00D6F82F /* TextInputApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		88001FAC1B84C17C00D6F82F /* TextInputApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88001FBB1B84C17C00D6F82F /* Build configuration list for PBXNativeTarget "TextInputApp WatchKit Extension" */;
+			buildPhases = (
+				88001FA91B84C17C00D6F82F /* Sources */,
+				88001FAA1B84C17C00D6F82F /* Frameworks */,
+				88001FAB1B84C17C00D6F82F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TextInputApp WatchKit Extension";
+			productName = "TextInputApp WatchKit Extension";
+			productReference = 88001FAD1B84C17C00D6F82F /* TextInputApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88001F841B84C17C00D6F82F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = eBookFrenzy;
+				TargetAttributes = {
+					88001F8B1B84C17C00D6F82F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					88001F9D1B84C17C00D6F82F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					88001FAC1B84C17C00D6F82F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 88001F871B84C17C00D6F82F /* Build configuration list for PBXProject "TextInputApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88001F831B84C17C00D6F82F;
+			productRefGroup = 88001F8D1B84C17C00D6F82F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88001F8B1B84C17C00D6F82F /* TextInputApp */,
+				88001F9D1B84C17C00D6F82F /* TextInputApp WatchKit App */,
+				88001FAC1B84C17C00D6F82F /* TextInputApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88001F8A1B84C17C00D6F82F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88001F9A1B84C17C00D6F82F /* LaunchScreen.storyboard in Resources */,
+				88001F971B84C17C00D6F82F /* Assets.xcassets in Resources */,
+				88001F951B84C17C00D6F82F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88001F9C1B84C17C00D6F82F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88001FA71B84C17C00D6F82F /* Assets.xcassets in Resources */,
+				88001FA51B84C17C00D6F82F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88001FAB1B84C17C00D6F82F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88001FB71B84C17C00D6F82F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88001F881B84C17C00D6F82F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88001F921B84C17C00D6F82F /* ViewController.swift in Sources */,
+				88001F901B84C17C00D6F82F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88001FA91B84C17C00D6F82F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88001FB51B84C17C00D6F82F /* ExtensionDelegate.swift in Sources */,
+				88001FB31B84C17C00D6F82F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88001FA11B84C17C00D6F82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88001F9D1B84C17C00D6F82F /* TextInputApp WatchKit App */;
+			targetProxy = 88001FA01B84C17C00D6F82F /* PBXContainerItemProxy */;
+		};
+		88001FB01B84C17C00D6F82F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88001FAC1B84C17C00D6F82F /* TextInputApp WatchKit Extension */;
+			targetProxy = 88001FAF1B84C17C00D6F82F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88001F931B84C17C00D6F82F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88001F941B84C17C00D6F82F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88001F981B84C17C00D6F82F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88001F991B84C17C00D6F82F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		88001FA31B84C17C00D6F82F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88001FA41B84C17C00D6F82F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88001FB91B84C17C00D6F82F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88001FBA1B84C17C00D6F82F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88001FBC1B84C17C00D6F82F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TextInputApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payloadmedia.TextInputApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		88001FBD1B84C17C00D6F82F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TextInputApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payloadmedia.TextInputApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		88001FC01B84C17C00D6F82F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TextInputApp_WatchKit_Extension;
+				INFOPLIST_FILE = "TextInputApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payloadmedia.TextInputApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		88001FC11B84C17C00D6F82F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TextInputApp_WatchKit_Extension;
+				INFOPLIST_FILE = "TextInputApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payloadmedia.TextInputApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		88001FC41B84C17C00D6F82F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextInputApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payloadmedia.TextInputApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88001FC51B84C17C00D6F82F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextInputApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.payloadmedia.TextInputApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88001F871B84C17C00D6F82F /* Build configuration list for PBXProject "TextInputApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88001FB91B84C17C00D6F82F /* Debug */,
+				88001FBA1B84C17C00D6F82F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88001FBB1B84C17C00D6F82F /* Build configuration list for PBXNativeTarget "TextInputApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88001FBC1B84C17C00D6F82F /* Debug */,
+				88001FBD1B84C17C00D6F82F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88001FBF1B84C17C00D6F82F /* Build configuration list for PBXNativeTarget "TextInputApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88001FC01B84C17C00D6F82F /* Debug */,
+				88001FC11B84C17C00D6F82F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88001FC31B84C17C00D6F82F /* Build configuration list for PBXNativeTarget "TextInputApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88001FC41B84C17C00D6F82F /* Debug */,
+				88001FC51B84C17C00D6F82F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88001F841B84C17C00D6F82F /* Project object */;
+}
